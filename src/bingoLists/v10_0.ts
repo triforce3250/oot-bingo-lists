@@ -5892,4 +5892,4 @@ export const bingoList: BingoList = {
   },
 };
 
-export default BingoList;
+export default bingoList;

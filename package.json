@@ -2,11 +2,12 @@
   "name": "oot-bingo-lists",
   "version": "1.0.0",
   "description": "Bingo Goal Lists for Oot Bingo",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
     "build/**/*"
   ],
   "scripts": {
-    "test": "jest",
     "build": "tsc",
     "dist": "npx webpack",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
