@@ -1,7 +1,6 @@
-// Goal List 10.1
 import { BingoList } from "oot-bingo-generator/build/types/goalList";
 
-const bingoList: BingoList = {
+export const bingoList_v10_1: BingoList = {
   info: {
     combined: "true",
     version: "v10.1",
@@ -5953,5 +5952,3 @@ const bingoList: BingoList = {
     "50": [],
   },
 };
-
-export default bingoList;

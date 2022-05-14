@@ -1,5 +1,7 @@
 # OoT Bingo Lists
 
+![image](https://img.shields.io/npm/v/oot-bingo-lists)
+
 ## Install
 
 ```
@@ -8,7 +10,12 @@ npm install oot-bingo-lists
 
 ## Supported bingo versions
 
+* `v9.1`
+* `v9.2`
+* `v9.3`
 * `v9.4`
+* `v9.5`
+* `v9.5.1`
 * `v10.0`
 * `v10.1`
 
