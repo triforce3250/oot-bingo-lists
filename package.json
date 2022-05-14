@@ -1,6 +1,6 @@
 {
   "name": "oot-bingo-lists",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Bingo Goal Lists for Oot Bingo",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -30,6 +30,9 @@
     "url": "https://github.com/xwmtp/oot-bingo-lists/issues"
   },
   "homepage": "https://github.com/xwmtp/oot-bingo-lists#readme",
+  "dependencies": {
+    "oot-bingo-generator": "^1.0.2"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.15.6",
     "@types/eslint": "^8.4.2",
@@ -51,8 +54,5 @@
   "prettier": {
     "printWidth": 90,
     "tabWidth": 2
-  },
-  "dependencies": {
-    "oot-bingo-generator": "^1.0.2"
   }
 }

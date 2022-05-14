@@ -4,6 +4,11 @@ import bingoList_v10_1 from "./bingoLists/v10_1";
 import { BingoList } from "oot-bingo-generator/build/types/goalList";
 
 export type BingoVersion = "v9.4" | "v10.0" | "v10.1";
+export const latestBingoVersion: BingoVersion = "v10.1";
+
+export const isBingoVersion = (str: string): str is BingoVersion => {
+  return ["v9.4", "v10.0", "v10.1"].includes(str);
+};
 
 /**
  * Get bingo goal list of a specific bingo version

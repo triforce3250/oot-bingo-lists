@@ -32,3 +32,14 @@ import { generateBoard } from "oot-bingo-generator";
 const bingoList = getBingoList("v10.1");
 const board = generateBoard(bingoList, "blackout", 654321);
 ```
+
+### Latest version
+
+Get the latest bingo list:
+
+```ts
+import { getBingoList } from "oot-bingo-lists";
+import { latestBingoVersion } from "oot-bingo-lists";
+
+const bingoList = getBingoList(latestBingoVersion);
+```
