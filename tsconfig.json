@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "allowJs": true,
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noImplicitUseStrict": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/__tests__",
+    "src/sandbox"
+  ]
+}
