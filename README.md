@@ -2,10 +2,12 @@
 
 ![image](https://img.shields.io/npm/v/oot-bingo-lists)
 
+Provides the bingo goal lists of various Ocarina of Time Bingo versions.
+
 ## Install
 
 ```
-npm install oot-bingo-lists
+npm install --save oot-bingo-lists
 ```
 
 ## Supported bingo versions
@@ -29,15 +31,17 @@ import { getBingoList } from "oot-bingo-lists";
 const bingoList = getBingoList("v10.1");
 ```
 
-With the [OoT Bingo Generator](https://github.com/xwmtp/oot-bingo-generator) installed as
-well (`npm install oot-bingo-generator`), you can use these bingo lists to generate a board:
+### Generator
+
+With the [OoT Bingo Generator](https://github.com/xwmtp/oot-bingo-generator) (`npm install --save oot-bingo-generator`),
+these bingo lists can be used to generate boards:
 
 ```ts
 import { getBingoList } from "oot-bingo-lists";
-import { generateBoard } from "oot-bingo-generator";
+import { generateBingoBoard } from "oot-bingo-generator";
 
 const bingoList = getBingoList("v10.1");
-const board = generateBoard(bingoList, "blackout", 654321);
+const board = generateBingoBoard(bingoList, "blackout", 654321);
 ```
 
 ### Latest version
@@ -45,8 +49,7 @@ const board = generateBoard(bingoList, "blackout", 654321);
 Get the latest bingo list:
 
 ```ts
-import { getBingoList } from "oot-bingo-lists";
-import { latestBingoVersion } from "oot-bingo-lists";
+import { getBingoList, latestBingoVersion } from "oot-bingo-lists";
 
 const bingoList = getBingoList(latestBingoVersion);
 ```
