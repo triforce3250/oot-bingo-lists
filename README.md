@@ -33,7 +33,8 @@ const bingoList = getBingoList("v10.1");
 
 ### Generator
 
-With the [OoT Bingo Generator](https://github.com/xwmtp/oot-bingo-generator) (`npm install --save oot-bingo-generator`),
+With
+the [OoT Bingo Generator](https://github.com/ootbingo/oot-bingo-generator) (`npm install --save oot-bingo-generator`),
 these bingo lists can be used to generate boards:
 
 ```ts

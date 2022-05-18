@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xwmtp/oot-bingo-lists.git"
+    "url": "git+https://github.com/ootbingo/oot-bingo-lists.git"
   },
   "keywords": [
     "oot",
@@ -27,9 +27,9 @@
   "author": "",
   "license": "GPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/xwmtp/oot-bingo-lists/issues"
+    "url": "https://github.com/ootbingo/oot-bingo-lists/issues"
   },
-  "homepage": "https://github.com/xwmtp/oot-bingo-lists#readme",
+  "homepage": "https://github.com/ootbingo/oot-bingo-lists#readme",
   "dependencies": {
     "oot-bingo-generator": "^1.0.3"
   },
