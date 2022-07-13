@@ -20,6 +20,7 @@ npm install --save oot-bingo-lists
 * `v9.5.1`
 * `v10.0`
 * `v10.1`
+* `v10.2`
 
 ## Usage
 
@@ -28,7 +29,7 @@ Use the `getBingoList()` function to retrieve the bingo list of a specific bingo
 ```ts
 import { getBingoList } from "oot-bingo-lists";
 
-const bingoList = getBingoList("v10.1");
+const bingoList = getBingoList("v10.2");
 ```
 
 ### Generator
@@ -41,7 +42,7 @@ these bingo lists can be used to generate boards:
 import { getBingoList } from "oot-bingo-lists";
 import { generateBingoBoard } from "oot-bingo-generator";
 
-const bingoList = getBingoList("v10.1");
+const bingoList = getBingoList("v10.2");
 const board = generateBingoBoard(bingoList, "blackout", 654321);
 ```
 

@@ -6,6 +6,7 @@ import { bingoList_v9_5 } from "./bingoLists/v9_5";
 import { bingoList_v9_5_1 } from "./bingoLists/v9_5_1";
 import { bingoList_v10_0 } from "./bingoLists/v10_0";
 import { bingoList_v10_1 } from "./bingoLists/v10_1";
+import { bingoList_v10_2 } from "./bingoLists/v10_2";
 import { BingoList } from "oot-bingo-generator/build/types/goalList";
 
 const bingoListPerVersion = {
@@ -17,10 +18,11 @@ const bingoListPerVersion = {
   "v9.5.1": bingoList_v9_5_1,
   "v10.0": bingoList_v10_0,
   "v10.1": bingoList_v10_1,
+  "v10.2": bingoList_v10_2,
 } as const;
 
 export type BingoVersion = keyof typeof bingoListPerVersion;
-export const latestBingoVersion: BingoVersion = "v10.1";
+export const latestBingoVersion: BingoVersion = "v10.2";
 
 export const isBingoVersion = (str: string): str is BingoVersion => {
   return str in bingoListPerVersion;
