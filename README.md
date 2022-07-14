@@ -2,7 +2,8 @@
 
 ![image](https://img.shields.io/npm/v/oot-bingo-lists)
 
-Provides the bingo goal lists of various Ocarina of Time Bingo versions.
+Provides the bingo goal lists of various Ocarina of Time Bingo versions. Also contains a function to print all the
+changes between two Bingo versions.
 
 ## Install
 
@@ -54,4 +55,15 @@ Get the latest bingo list:
 import { getBingoList, latestBingoVersion } from "oot-bingo-lists";
 
 const bingoList = getBingoList(latestBingoVersion);
+```
+
+### Changelog
+
+Print the changes between an old and new version. The provided goal lists should be of a single mode (like normal or
+short), not combined:
+
+```ts
+import { printChangeLog, getBingoList } from "oot-bingo-lists";
+
+printChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
 ```
