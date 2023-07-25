@@ -6,96 +6,110 @@ import { Goal, GoalList } from "oot-bingo-generator/build/types/goalList";
  *
  * @param goalList1 Goal list of the old version (normal or short list, not combined)
  * @param goalList2 Goal list of the new version (normal or short list, not combined)
+ * @returns Array with all the logs
  */
-export function printChangeLog(goalList1: GoalList, goalList2: GoalList) {
+export function getChangeLog(goalList1: GoalList, goalList2: GoalList): string[] {
   const goals1 = getFlatGoals(goalList1);
   const goals2 = getFlatGoals(goalList2);
 
-  const removedGoalLogs: string[] = [];
-  const addedGoalLogs: string[] = [];
+  let allLogs: string[] = [];
+
+  allLogs.concat(getChangedPropsOfGoalListsLogs(goalList1, goalList2));
+
+  // goals added
+  allLogs.push("\n### Added goals");
+  for (const goal2 of goals2) {
+    const goal1 = goals1.find((goal1) => goal2.id === goal1.id);
+    if (!goal1) {
+      allLogs.push(`* Goal *${goal2.name}* was added`);
+    }
+  }
 
   // goals removed
+  allLogs.push("\n### Removed goals");
   for (const goal1 of goals1) {
     const goal2 = goals2.find((goal2) => goal2.id === goal1.id);
     if (!goal2) {
-      removedGoalLogs.push(`* Goal *${goal1.name}* was removed`);
-      continue;
-    }
-
-    // changed props
-    printChangedProps(goal1, goal2);
-  }
-
-  // goals added
-  for (const goal2 of goals2) {
-    const matchingGoal = goals1.find((goal1) => goal2.id === goal1.id);
-    if (!matchingGoal) {
-      addedGoalLogs.push(`* Goal *${goal2.name}* was added`);
+      allLogs.push(`* Goal *${goal1.name}* was removed`);
     }
   }
 
-  console.log("\n**Added goals:**");
-  for (const log of addedGoalLogs) {
-    console.log(log);
+  // goals changed
+  allLogs.push('\n### Goals changed');
+  for (const goal1 of goals1) {
+    const goal2 = goals2.find((goal2) => goal2.id === goal1.id);
+    allLogs = allLogs.concat(getChangedPropsOfGoalsLogs(goal1, goal2));
   }
 
-  console.log("\n**Removed goals:**");
-  for (const log of removedGoalLogs) {
-    console.log(log);
-  }
+  return allLogs;
 }
 
-function printChangedProps(goal1: Goal, goal2: Goal) {
-  const propsChanged: string[] = [];
+function getChangedPropsOfGoalsLogs(goal1: Goal, goal2: Goal): string[] {
+  let logs: string[] = [`\n**${goal2.name}**`];
 
   // props changed
-  for (const prop of ["name", "jp", "skill", "time"]) {
+  for (const prop of ["name", "jp", "skill", "time"] as const) {
     if (goal1[prop] !== goal2[prop]) {
-      propsChanged.push(
+      logs.push(
         `* Changed **${prop}** from **${goal1[prop]}** to **${goal2[prop]}**`
       );
     }
   }
 
   // types/subtypes/rowtypes changed
-
-  for (const synergyType of ["types", "subtypes", "rowtypes"]) {
+  for (const synergyType of ["types", "subtypes", "rowtypes"] as const) {
+    const synergyTypeStr = synergyType.slice(0, -1);
     const synergies1 = goal1[synergyType];
     const synergies2 = goal2[synergyType];
-    const synergyTypeStr = synergyType.slice(0, -1);
-    for (const category in synergies1 || {}) {
-      // synergy removed
-      if (!(category in synergies2)) {
-        propsChanged.push(
-          `* Removed ${synergyTypeStr} **${category}** (was **${synergies1[category]}**)`
-        );
-        continue;
-      }
 
-      // synergy changed
-      if (synergies1[category] !== synergies2[category]) {
-        propsChanged.push(
-          `* Changed ${synergyTypeStr} **${category}** from **${synergies1[category]}** to **${synergies2[category]}**`
-        );
-      }
+    logs = logs.concat(getChangedPropsLogs(synergyTypeStr, synergies1, synergies2))
+  }
+
+  if (logs.length <= 1) {
+    return [];
+  }
+  return logs;
+}
+
+function getChangedPropsOfGoalListsLogs(goalList1: GoalList, goalList2: GoalList): string[] {
+  let logs: string[] = [];
+
+  for (const goalListPropType of ["synfilters", "rowtypes"]) {
+    const propsLogs = logs.concat(getChangedPropsLogs(goalListPropType, goalList1[goalListPropType], goalList2[goalListPropType]));
+    if (propsLogs.length > 0) {
+      logs.push(`\n### ${capitalizeFirstLetter(goalListPropType)}`);
+      logs.concat(propsLogs);
     }
+  }
+  return logs;
+}
 
-    // synergy added
-    for (const category in synergies2 || {}) {
-      if (!(category in synergies1)) {
-        propsChanged.push(
-          `* Added ${synergyTypeStr} **${category}** with value **${synergies2[category]}**`
-        );
-      }
+function getChangedPropsLogs(
+  propsTypeName: string,
+  props1: {
+    [key: string]: string | number;
+  }, props2: {
+    [key: string]: string | number;
+  }) {
+
+
+  const logs: string[] = [];
+  for (const prop in (props2 || {})) {
+    if (!(prop in (props1 || {}))) {
+      logs.push(`* Added ${propsTypeName} **${prop}** with value **${props2[prop]}**`)
+      continue;
+    }
+    if (props2[prop] !== props1[prop]) {
+      logs.push(`* Changed ${propsTypeName} **${prop}** from **${props1[prop]}** to **${props2[prop]}**`)
+    }
+  }
+  for (const filter in (props1 || {})) {
+    if (!(filter in (props2 || {}))) {
+      logs.push(`* Removed ${propsTypeName} **${filter}** (was **${props1[filter]}**)`)
     }
   }
 
-  if (propsChanged.length > 0) {
-    console.log(`\n**${goal2.name}**`);
-    for (const log of propsChanged) {
-      console.log(log);
-    }
-  }
+  return logs;
 }
 
 function getFlatGoals(goalList: GoalList): Goal[] {
@@ -106,4 +120,8 @@ function getFlatGoals(goalList: GoalList): Goal[] {
     }
   }
   return flatGoals.sort((a, b) => b.difficulty - a.difficulty);
+}
+
+function capitalizeFirstLetter(string): string {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
