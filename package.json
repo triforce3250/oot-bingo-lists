@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "jest",
     "dist": "npx webpack",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint tsconfig.json",
