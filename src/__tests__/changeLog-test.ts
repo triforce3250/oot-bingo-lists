@@ -1,14 +1,10 @@
-import { getChangeLog } from '../changeLog'
-import { getBingoList } from '../index'
-import { v10_3_option_3 } from '../lists/v10_3_option_3';
-import { v10_3_option_4 } from '../lists/v10_3_option_4';
+import { getChangeLog } from "../changeLog";
+import { getBingoList } from "../index";
 
-describe('changeLog', () => {
+describe("changeLog", () => {
+  it("generates the correct changelog", () => {
+    const logs = getChangeLog(getBingoList("v10.2").normal, getBingoList("v10.3").normal);
 
-    it('works', () => {
-        const logs = getChangeLog(getBingoList('v10.2').normal, v10_3_option_4.normal);
-
-        console.log(logs.join('\n'));
-    })
-
-})
+    expect(logs).toMatchSnapshot();
+  });
+});

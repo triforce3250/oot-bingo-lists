@@ -1,0 +1,619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeLog generates the correct changelog 1`] = `
+Array [
+  "
+### Added goals",
+  "* Goal *Obtain 4 Different Heart Containers* was added",
+  "* Goal *Fill 20 Item Inventory Slots* was added",
+  "* Goal *Biggoron's Sword* was added",
+  "* Goal *Obtain 16 Different Heart Pieces* was added",
+  "* Goal *Obtain 3 Different Heart Containers* was added",
+  "* Goal *Open Forest Temple Boss Key Door* was added",
+  "* Goal *Obtain 12 Different Heart Pieces* was added",
+  "
+### Removed goals",
+  "
+### Goals changed",
+  "
+**3 Swords, Tunics, Boots, and Shields**",
+  "* Changed **time** from **17.75** to **17.25**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Beat the Spirit Temple**",
+  "* Changed **skill** from **1** to **1.75**",
+  "* Changed **time** from **18.25** to **16.5**",
+  "
+**10 Songs**",
+  "* Changed **time** from **17.25** to **16.25**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **child2** from **3** to **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "* Changed subtype **hearts4** from **0.25** to **1**",
+  "
+**7 Compasses**",
+  "* Changed rowtype **ms** from **5** to **4**",
+  "
+**9 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "* Changed rowtype **ms** from **100** to **6.5**",
+  "
+**Defeat Twinrova**",
+  "* Changed **skill** from **1** to **1.75**",
+  "* Changed **time** from **17** to **15.25**",
+  "
+**30 Different Skulltulas**",
+  "* Added type **childreset** with value **1.25**",
+  "* Added subtype **jabu** with value **3.75**",
+  "* Removed subtype **childreset** (was **1.25**)",
+  "* Changed rowtype **ms** from **4** to **0**",
+  "
+**Two Fairy Spells**",
+  "* Changed type **dmc** from **0.75** to **1**",
+  "* Changed type **dmcchild** from **0.75** to **1.25**",
+  "* Changed subtype **hearts3** from **2.25** to **1.5**",
+  "* Changed subtype **hearts4** from **0.5** to **0.75**",
+  "
+**Green Gauntlets**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **15** to **15.25**",
+  "* Changed subtype **hearts3** from **3** to **0.75**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**All 5 Skulltulas in Water Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**Free all 9 Gorons in Fire Temple**",
+  "* Added subtype **swords** with value **0.75**",
+  "
+**All 5 Skulltulas in Shadow Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**All 5 Skulltulas in Spirit Temple**",
+  "* Changed **time** from **13.75** to **13.25**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**6 Compasses**",
+  "* Changed rowtype **ms** from **3** to **2.5**",
+  "
+**8 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "* Changed rowtype **ms** from **9** to **5.25**",
+  "
+**Din's Fire**",
+  "* Changed **skill** from **0** to **0.5**",
+  "* Changed **time** from **12.75** to **13.75**",
+  "* Added type **bothzl** with value **-1.25**",
+  "* Added type **dmc** with value **1**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **3.5** to **0.75**",
+  "* Added subtype **poachers** with value **1.25**",
+  "
+**Goron Bracelet**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **13** to **13.25**",
+  "* Changed subtype **hearts3** from **3** to **0.75**",
+  "* Changed subtype **skulls** from **100** to **0.5**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**3 Swords & 3 Shields**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Nayru's Love**",
+  "* Changed subtype **hearts3** from **1** to **0.75**",
+  "* Changed subtype **hearts4** from **0.25** to **0.75**",
+  "
+**All 5 Lake Hylia Skulltulas**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**All 5 Skulltulas in Fire Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**Blue Gauntlets**",
+  "* Changed **skill** from **0.5** to **0.75**",
+  "* Changed **time** from **11.25** to **11.5**",
+  "
+**9 Songs**",
+  "* Changed **time** from **10.75** to **10.25**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **endon** with value **-0.25**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "* Added subtype **spirit** with value **1.25**",
+  "
+**3 Shields**",
+  "* Changed rowtype **ms** from **2.5** to **0**",
+  "
+**Farore's Wind**",
+  "* Changed **time** from **10.5** to **9.5**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **2.5** to **1.5**",
+  "* Added subtype **hearts4** with value **0.25**",
+  "
+**Saria's Song**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **10.5** to **10.75**",
+  "* Changed subtype **hearts3** from **3** to **0.25**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**All 4 Wasteland/ Colossus area Skulltulas**",
+  "* Changed **skill** from **0.5** to **1**",
+  "* Changed **time** from **9.75** to **10.25**",
+  "* Added type **childchu** with value **0**",
+  "
+**7 Different Unused Keys in Gerudo Training Grounds**",
+  "* Changed type **endon** from **-0.5** to **-0.25**",
+  "
+**Mirror Shield**",
+  "* Changed rowtype **ms** from **2.25** to **0**",
+  "
+**Silver Gauntlets**",
+  "* Changed rowtype **ms** from **1.5** to **0**",
+  "
+**5 Compasses**",
+  "* Changed rowtype **ms** from **2** to **1.5**",
+  "
+**Double Magic**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Double Defense**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Defeat Amy (Green Poe)**",
+  "* Changed **jp** from **エイミー撃破(緑のポウ)ｴ** to **エイミー撃破(緑のポウ)**",
+  "
+**20 Different Skulltulas**",
+  "* Changed rowtype **ms** from **2** to **0**",
+  "
+**Open 2 Boss Key Doors**",
+  "* Changed **jp** from **スカギの扉を2つ開ける** to **ボスカギの扉を2つ開ける**",
+  "
+**3 Swords & 3 Boots**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**7 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "
+**Defeat Barinade**",
+  "* Changed rowtype **ms** from **2** to **1**",
+  "
+**Beat Jabu-Jabu's Belly**",
+  "* Changed **time** from **8.25** to **10**",
+  "* Changed rowtype **ms** from **3** to **1**",
+  "
+**Bronze Gauntlets**",
+  "* Changed **time** from **8.5** to **6.5**",
+  "
+**8 Songs**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Keaton Mask**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **7.75** to **8**",
+  "* Removed subtype **hearts3** (was **3**)",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**Open the Final Door of Fire Trial**",
+  "* Changed **time** from **7.5** to **6.5**",
+  "
+**7 Songs**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added subtype **forest** with value **0.75**",
+  "* Changed subtype **hearts3** from **0.5** to **0.75**",
+  "
+**Plant 5 Magic Beans**",
+  "* Changed **skill** from **0.5** to **0**",
+  "* Changed **time** from **6.75** to **6.25**",
+  "
+**All 4 Gerudo Valley area Skulltulas**",
+  "* Changed **skill** from **0.25** to **1**",
+  "* Changed **time** from **7** to **7.75**",
+  "
+**All 5 Skulltulas in Forest Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**4 Compasses**",
+  "* Changed rowtype **ms** from **0.75** to **0.5**",
+  "
+**All 4 Lon Lon Ranch area Skulltulas**",
+  "* Changed **jp** from **ロンロン牧場エリアの黄金のスタルチュラ4匹** to **ロンロン牧場エリアの黄金のスタルチュラ2匹**",
+  "* Changed **skill** from **0.75** to **1.75**",
+  "* Changed **time** from **5.75** to **6.75**",
+  "* Changed subtype **jabu** from **2.75** to **3.75**",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**Epona's Song**",
+  "* Added subtype **child2** with value **1**",
+  "
+**Open 50 Rupee chest in Wasteland**",
+  "* Changed **skill** from **0.25** to **0.75**",
+  "* Changed **time** from **6.25** to **6.75**",
+  "* Added type **childchu** with value **0**",
+  "
+**Defeat Big Octo**",
+  "* Changed rowtype **ms** from **2** to **1**",
+  "
+**Defeat Morpha**",
+  "* Changed type **water** from **7** to **2**",
+  "* Added subtype **bossdoor** with value **0.5**",
+  "
+**Beat the Shadow Temple**",
+  "* Changed type **shadow** from **5** to **1**",
+  "* Removed type **deku** (was **2**)",
+  "* Changed rowtype **bottle** from **100** to **1**",
+  "
+**15 Different Skulltulas**",
+  "* Changed rowtype **ms** from **1.5** to **0**",
+  "
+**All 4 Lost Woods area Skulltulas**",
+  "* Removed type **saria** (was **0.25**)",
+  "* Added subtype **child2** with value **2**",
+  "* Added subtype **saria** with value **0.25**",
+  "
+**3 Lake Hylia Skulltulas**",
+  "* Changed subtype **skulls** from **1.5** to **2.25**",
+  "
+**Beat the Forest Temple**",
+  "* Changed **time** from **5** to **6**",
+  "
+**Forest Medallion**",
+  "* Changed **time** from **5.5** to **6.5**",
+  "
+**Both Hyrule Field area Skulltulas**",
+  "* Changed **jp** from **ハイラル平原エリアの黄金ノスタルチュラ2匹** to **ハイラル平原エリアの黄金のスタルチュラ2匹**",
+  "
+**All 3 Kokiri Forest area Skulltulas**",
+  "* Changed subtype **child2** from **1** to **2**",
+  "
+**Milk**",
+  "* Added subtype **child2** with value **1**",
+  "* Added subtype **marketgs** with value **2**",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**Defeat Phantom Ganon**",
+  "* Changed **time** from **4.75** to **5.75**",
+  "
+**Defeat Bongo-Bongo**",
+  "* Changed type **shadow** from **5** to **1**",
+  "* Removed type **deku** (was **2**)",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**3 Swords & 3 Tunics**",
+  "* Changed **time** from **3.75** to **3.25**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Silver Scale**",
+  "* Changed subtype **skulls** from **100** to **2.25**",
+  "
+**2 Skulltulas in Lon Lon Ranch**",
+  "* Changed **jp** from **ンロン牧場エリアの黄金のスタルチュラ2匹** to **ロンロン牧場エリアの黄金のスタルチュラ2匹**",
+  "
+**Giant's Knife**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Defeat a Skull Kid**",
+  "* Added subtype **poachers** with value **0.5**",
+  "
+**Lens of Truth**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **0.25** to **1.5**",
+  "* Added subtype **goldrupee** with value **0.5**",
+]
+`;
+
+exports[`changeLog works 1`] = `
+Array [
+  "
+### Added goals",
+  "* Goal *Obtain 4 Different Heart Containers* was added",
+  "* Goal *Fill 20 Item Inventory Slots* was added",
+  "* Goal *Biggoron's Sword* was added",
+  "* Goal *Obtain 16 Different Heart Pieces* was added",
+  "* Goal *Obtain 3 Different Heart Containers* was added",
+  "* Goal *Open Forest Temple Boss Key Door* was added",
+  "* Goal *Obtain 12 Different Heart Pieces* was added",
+  "
+### Removed goals",
+  "
+### Goals changed",
+  "
+**3 Swords, Tunics, Boots, and Shields**",
+  "* Changed **time** from **17.75** to **17.25**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Beat the Spirit Temple**",
+  "* Changed **skill** from **1** to **1.75**",
+  "* Changed **time** from **18.25** to **16.5**",
+  "
+**10 Songs**",
+  "* Changed **time** from **17.25** to **16.25**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **child2** from **3** to **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "* Changed subtype **hearts4** from **0.25** to **1**",
+  "
+**7 Compasses**",
+  "* Changed rowtype **ms** from **5** to **4**",
+  "
+**9 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "* Changed rowtype **ms** from **100** to **6.5**",
+  "
+**Defeat Twinrova**",
+  "* Changed **skill** from **1** to **1.75**",
+  "* Changed **time** from **17** to **15.25**",
+  "
+**30 Different Skulltulas**",
+  "* Added type **childreset** with value **1.25**",
+  "* Added subtype **jabu** with value **3.75**",
+  "* Removed subtype **childreset** (was **1.25**)",
+  "* Changed rowtype **ms** from **4** to **0**",
+  "
+**Two Fairy Spells**",
+  "* Changed type **dmc** from **0.75** to **1**",
+  "* Changed type **dmcchild** from **0.75** to **1.25**",
+  "* Changed subtype **hearts3** from **2.25** to **1.5**",
+  "* Changed subtype **hearts4** from **0.5** to **0.75**",
+  "
+**Green Gauntlets**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **15** to **15.25**",
+  "* Changed subtype **hearts3** from **3** to **0.75**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**All 5 Skulltulas in Water Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**Free all 9 Gorons in Fire Temple**",
+  "* Added subtype **swords** with value **0.75**",
+  "
+**All 5 Skulltulas in Shadow Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**All 5 Skulltulas in Spirit Temple**",
+  "* Changed **time** from **13.75** to **13.25**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**6 Compasses**",
+  "* Changed rowtype **ms** from **3** to **2.5**",
+  "
+**8 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "* Changed rowtype **ms** from **9** to **5.25**",
+  "
+**Din's Fire**",
+  "* Changed **skill** from **0** to **0.5**",
+  "* Changed **time** from **12.75** to **13.75**",
+  "* Added type **bothzl** with value **-1.25**",
+  "* Added type **dmc** with value **1**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **3.5** to **0.75**",
+  "* Added subtype **poachers** with value **1.25**",
+  "
+**Goron Bracelet**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **13** to **13.25**",
+  "* Changed subtype **hearts3** from **3** to **0.75**",
+  "* Changed subtype **skulls** from **100** to **0.5**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**3 Swords & 3 Shields**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Nayru's Love**",
+  "* Changed subtype **hearts3** from **1** to **0.75**",
+  "* Changed subtype **hearts4** from **0.25** to **0.75**",
+  "
+**All 5 Lake Hylia Skulltulas**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**All 5 Skulltulas in Fire Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**Blue Gauntlets**",
+  "* Changed **skill** from **0.5** to **0.75**",
+  "* Changed **time** from **11.25** to **11.5**",
+  "
+**9 Songs**",
+  "* Changed **time** from **10.75** to **10.25**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **endon** with value **-0.25**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "* Added subtype **spirit** with value **1.25**",
+  "
+**3 Shields**",
+  "* Changed rowtype **ms** from **2.5** to **0**",
+  "
+**Farore's Wind**",
+  "* Changed **time** from **10.5** to **9.5**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **2.5** to **1.5**",
+  "* Added subtype **hearts4** with value **0.25**",
+  "
+**Saria's Song**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **10.5** to **10.75**",
+  "* Changed subtype **hearts3** from **3** to **0.25**",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**All 4 Wasteland/ Colossus area Skulltulas**",
+  "* Changed **skill** from **0.5** to **1**",
+  "* Changed **time** from **9.75** to **10.25**",
+  "* Added type **childchu** with value **0**",
+  "
+**7 Different Unused Keys in Gerudo Training Grounds**",
+  "* Changed type **endon** from **-0.5** to **-0.25**",
+  "
+**Mirror Shield**",
+  "* Changed rowtype **ms** from **2.25** to **0**",
+  "
+**Silver Gauntlets**",
+  "* Changed rowtype **ms** from **1.5** to **0**",
+  "
+**5 Compasses**",
+  "* Changed rowtype **ms** from **2** to **1.5**",
+  "
+**Double Magic**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Double Defense**",
+  "* Added type **endon** with value **-0.25**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Defeat Amy (Green Poe)**",
+  "* Changed **jp** from **エイミー撃破(緑のポウ)ｴ** to **エイミー撃破(緑のポウ)**",
+  "
+**20 Different Skulltulas**",
+  "* Changed rowtype **ms** from **2** to **0**",
+  "
+**Open 2 Boss Key Doors**",
+  "* Changed **jp** from **スカギの扉を2つ開ける** to **ボスカギの扉を2つ開ける**",
+  "
+**3 Swords & 3 Boots**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**7 Hearts (no duping)**",
+  "* Added subtype **hovers** with value **1**",
+  "* Added subtype **poachers** with value **2.5**",
+  "
+**Defeat Barinade**",
+  "* Changed rowtype **ms** from **2** to **1**",
+  "
+**Beat Jabu-Jabu's Belly**",
+  "* Changed **time** from **8.25** to **10**",
+  "* Changed rowtype **ms** from **3** to **1**",
+  "
+**Bronze Gauntlets**",
+  "* Changed **time** from **8.5** to **6.5**",
+  "
+**8 Songs**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added type **forest** with value **1.5**",
+  "* Changed subtype **hearts3** from **1.5** to **0.75**",
+  "
+**Keaton Mask**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **7.75** to **8**",
+  "* Removed subtype **hearts3** (was **3**)",
+  "* Removed subtype **hearts4** (was **1**)",
+  "
+**Open the Final Door of Fire Trial**",
+  "* Changed **time** from **7.5** to **6.5**",
+  "
+**7 Songs**",
+  "* Added type **dmc** with value **0.75**",
+  "* Added subtype **forest** with value **0.75**",
+  "* Changed subtype **hearts3** from **0.5** to **0.75**",
+  "
+**Plant 5 Magic Beans**",
+  "* Changed **skill** from **0.5** to **0**",
+  "* Changed **time** from **6.75** to **6.25**",
+  "
+**All 4 Gerudo Valley area Skulltulas**",
+  "* Changed **skill** from **0.25** to **1**",
+  "* Changed **time** from **7** to **7.75**",
+  "
+**All 5 Skulltulas in Forest Temple**",
+  "* Changed subtype **skulls** from **2.5** to **3.75**",
+  "
+**4 Compasses**",
+  "* Changed rowtype **ms** from **0.75** to **0.5**",
+  "
+**All 4 Lon Lon Ranch area Skulltulas**",
+  "* Changed **jp** from **ロンロン牧場エリアの黄金のスタルチュラ4匹** to **ロンロン牧場エリアの黄金のスタルチュラ2匹**",
+  "* Changed **skill** from **0.75** to **1.75**",
+  "* Changed **time** from **5.75** to **6.75**",
+  "* Changed subtype **jabu** from **2.75** to **3.75**",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**Epona's Song**",
+  "* Added subtype **child2** with value **1**",
+  "
+**Open 50 Rupee chest in Wasteland**",
+  "* Changed **skill** from **0.25** to **0.75**",
+  "* Changed **time** from **6.25** to **6.75**",
+  "* Added type **childchu** with value **0**",
+  "
+**Defeat Big Octo**",
+  "* Changed rowtype **ms** from **2** to **1**",
+  "
+**Defeat Morpha**",
+  "* Changed type **water** from **7** to **2**",
+  "* Added subtype **bossdoor** with value **0.5**",
+  "
+**Beat the Shadow Temple**",
+  "* Changed type **shadow** from **5** to **1**",
+  "* Removed type **deku** (was **2**)",
+  "* Changed rowtype **bottle** from **100** to **1**",
+  "
+**15 Different Skulltulas**",
+  "* Changed rowtype **ms** from **1.5** to **0**",
+  "
+**All 4 Lost Woods area Skulltulas**",
+  "* Removed type **saria** (was **0.25**)",
+  "* Added subtype **child2** with value **2**",
+  "* Added subtype **saria** with value **0.25**",
+  "
+**3 Lake Hylia Skulltulas**",
+  "* Changed subtype **skulls** from **1.5** to **2.25**",
+  "
+**Beat the Forest Temple**",
+  "* Changed **time** from **5** to **6**",
+  "
+**Forest Medallion**",
+  "* Changed **time** from **5.5** to **6.5**",
+  "
+**Both Hyrule Field area Skulltulas**",
+  "* Changed **jp** from **ハイラル平原エリアの黄金ノスタルチュラ2匹** to **ハイラル平原エリアの黄金のスタルチュラ2匹**",
+  "
+**All 3 Kokiri Forest area Skulltulas**",
+  "* Changed subtype **child2** from **1** to **2**",
+  "
+**Milk**",
+  "* Added subtype **child2** with value **1**",
+  "* Added subtype **marketgs** with value **2**",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**Defeat Phantom Ganon**",
+  "* Changed **time** from **4.75** to **5.75**",
+  "
+**Defeat Bongo-Bongo**",
+  "* Changed type **shadow** from **5** to **1**",
+  "* Removed type **deku** (was **2**)",
+  "* Changed rowtype **bottle** from **100** to **0**",
+  "
+**3 Swords & 3 Tunics**",
+  "* Changed **time** from **3.75** to **3.25**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Silver Scale**",
+  "* Changed subtype **skulls** from **100** to **2.25**",
+  "
+**2 Skulltulas in Lon Lon Ranch**",
+  "* Changed **jp** from **ンロン牧場エリアの黄金のスタルチュラ2匹** to **ロンロン牧場エリアの黄金のスタルチュラ2匹**",
+  "
+**Giant's Knife**",
+  "* Added subtype **goldrupee** with value **0.5**",
+  "
+**Defeat a Skull Kid**",
+  "* Added subtype **poachers** with value **0.5**",
+  "
+**Lens of Truth**",
+  "* Changed **skill** from **0** to **0.25**",
+  "* Changed **time** from **0.25** to **1.5**",
+  "* Added subtype **goldrupee** with value **0.5**",
+]
+`;
