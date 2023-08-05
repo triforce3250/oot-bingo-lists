@@ -9,6 +9,7 @@ import { bingoList_v10_0 } from "./bingoLists/v10_0";
 import { bingoList_v10_1 } from "./bingoLists/v10_1";
 import { bingoList_v10_2 } from "./bingoLists/v10_2";
 import { bingoList_v10_3 } from "./bingoLists/v10_3";
+import { bingoList_v10_3_1 } from "./bingoLists/v10_3_1";
 
 const bingoListPerVersion = {
   "v9.1": bingoList_v9_1,
@@ -21,6 +22,7 @@ const bingoListPerVersion = {
   "v10.1": bingoList_v10_1,
   "v10.2": bingoList_v10_2,
   "v10.3": bingoList_v10_3,
+  "v10.3.1": bingoList_v10_3_1,
 } as const;
 
 export type BingoVersion = keyof typeof bingoListPerVersion;
