@@ -1,10 +1,7 @@
 import { BingoList } from "oot-bingo-generator/build/types/goalList";
 
 export const bingoList_v10_3: BingoList = {
-  info: {
-    combined: "true",
-    version: "v10.3",
-  },
+  info: { combined: "true", version: "v10.3" },
   normal: {
     "0": [],
     "1": [
@@ -1410,7 +1407,7 @@ export const bingoList_v10_3: BingoList = {
       {
         difficulty: 9,
         id: "all-4-lon-lon-ranch-area-skulltulas",
-        jp: "ロンロン牧場エリアの黄金のスタルチュラ2匹",
+        jp: "ロンロン牧場エリアの黄金のスタルチュラ4匹",
         name: "All 4 Lon Lon Ranch area Skulltulas",
         rowtypes: { bottle: 0, gclw: 0, hookshot: 0, ms: 0 },
         skill: 1.75,
