@@ -8,7 +8,7 @@ import { Goal, GoalList } from "oot-bingo-generator/build/types/goalList";
  * @param goalList2 Goal list of the new version (normal or short list, not combined)
  * @returns Array with all the logs
  */
-export function getChangeLog(goalList1: GoalList, goalList2: GoalList): string[] {
+export function printChangeLog(goalList1: GoalList, goalList2: GoalList): string[] {
   const goals1 = getFlatGoals(goalList1);
   const goals2 = getFlatGoals(goalList2);
 
