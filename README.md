@@ -65,7 +65,7 @@ Print the changes between an old and new version. The provided goal lists should
 short), not combined:
 
 ```ts
-import { printChangeLog, getBingoList } from "oot-bingo-lists";
+import { getChangeLog, getBingoList } from "oot-bingo-lists";
 
-printChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
+getChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
 ```
