@@ -2,7 +2,7 @@ import { Goal, GoalList } from "oot-bingo-generator/build/types/goalList";
 
 /**
  * Print the changes between two Bingo goal lists.
- * Example usage: printChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
+ * Example usage: getChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
  *
  * @param goalList1 Goal list of the old version (normal or short list, not combined)
  * @param goalList2 Goal list of the new version (normal or short list, not combined)
