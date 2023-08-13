@@ -7,4 +7,10 @@ describe("changeLog", () => {
 
     expect(logs).toMatchSnapshot();
   });
+
+  it("does not display anything when there are no changes", () => {
+    const logs = getChangeLog(getBingoList("v10.2").normal, getBingoList("v10.2").normal);
+
+    expect(logs).toHaveLength(0);
+  });
 });
