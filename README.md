@@ -69,3 +69,9 @@ import { printChangeLog, getBingoList } from "oot-bingo-lists";
 
 printChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
 ```
+
+### Sandbox
+
+If you're running this project directly instead of importing it in another project, you can run `npm start` to
+execute `src/sandbox/main.ts`. This file contains an example of how to generate a changelog between two versions. Put
+your own proposed bingo list in `exampleBingoList.ts` to see which changes it has compared to an existing version.
