@@ -158,6 +158,7 @@ export var Generator_V1;
             let o = 0;
             for (; !r && o < t; ) o++, (r = this.generate(e));
             if (r) return new a.BingoBoard(r.squares, o);
+            console.error(`Failed to generate board after ${o} iterations`);
           }
 
           generate(e) {
