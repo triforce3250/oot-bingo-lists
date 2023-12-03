@@ -46,7 +46,11 @@ export function getChangeLog(goalList1: GoalList, goalList2: GoalList): string[]
   let goalsChangedLogs: string[] = [];
   for (const goal1 of goals1) {
     const goal2 = goals2.find((goal2) => goal2.id === goal1.id);
-    goalsChangedLogs = goalsChangedLogs.concat(getChangedPropsOfGoalsLogs(goal1, goal2));
+    if (goal2) {
+      goalsChangedLogs = goalsChangedLogs.concat(
+        getChangedPropsOfGoalsLogs(goal1, goal2)
+      );
+    }
   }
   if (goalsChangedLogs.length > 0) {
     allLogs.push("\n### Goals changed");
