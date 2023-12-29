@@ -53,7 +53,7 @@ export function getChangeLog(goalList1: GoalList, goalList2: GoalList): string[]
     }
   }
   if (goalsChangedLogs.length > 0) {
-    allLogs.push("\n### Goals changed");
+    allLogs.push("\n### Changed goals");
     allLogs = allLogs.concat(goalsChangedLogs);
   }
 
