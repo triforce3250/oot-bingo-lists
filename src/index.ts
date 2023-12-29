@@ -15,6 +15,7 @@ import { bingoList_v10_2 } from "./bingoLists/v10_2";
 import { bingoList_v10_3 } from "./bingoLists/v10_3";
 import { bingoList_v10_3_1 } from "./bingoLists/v10_3_1";
 import { bingoList_v10_3_2 } from "./bingoLists/v10_3_2";
+import { bingoList_v10_4 } from "./bingoLists/v10_4";
 
 const bingoListPerVersion = {
   "v9.1": { bingoList: bingoList_v9_1, generator: Generator_V1 },
@@ -29,10 +30,11 @@ const bingoListPerVersion = {
   "v10.3": { bingoList: bingoList_v10_3, generator: Generator_V1 },
   "v10.3.1": { bingoList: bingoList_v10_3_1, generator: Generator_V1 },
   "v10.3.2": { bingoList: bingoList_v10_3_2, generator: Generator_V1 },
+  "v10.4": { bingoList: bingoList_v10_4, generator: Generator_V1 },
 } as const;
 
 export type BingoVersion = keyof typeof bingoListPerVersion;
-export const latestBingoVersion: BingoVersion = "v10.3.2";
+export const latestBingoVersion: BingoVersion = "v10.4";
 
 export const isBingoVersion = (str: string): str is BingoVersion => {
   return str in bingoListPerVersion;
