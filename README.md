@@ -83,7 +83,7 @@ and
 install the dependencies:
 
 ```sh
-npm run install
+npm install
 ```
 
 ### Build
