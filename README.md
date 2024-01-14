@@ -2,8 +2,14 @@
 
 ![image](https://img.shields.io/npm/v/oot-bingo-lists)
 
-Provides the bingo goal lists of various Ocarina of Time Bingo versions. Also contains a function to print all the
-changes between two Bingo versions.
+Provides the **bingo goal lists** and **generators** of various Ocarina of Time Bingo versions.
+
+Related packages:
+
+* [oot-bingo-generator](https://www.npmjs.com/package/oot-bingo-generator) Latest version of the generator, and lots of
+  documentation
+* [oot-bingo-tools](https://www.npmjs.com/package/oot-bingo-tools) Handy helper functions like frequency analysis and
+  changelog generation
 
 ## Install
 
@@ -29,7 +35,7 @@ npm install --save oot-bingo-lists
 
 ## Usage
 
-### Bingo lists
+### Bingo lists and generators
 
 Use the `getBingoList()` function to retrieve the bingo list of a specific bingo version:
 
@@ -39,7 +45,17 @@ import { getBingoList } from "oot-bingo-lists";
 const bingoList = getBingoList("v10.2");
 ```
 
-### Latest version
+Note that the latest version of the [oot-bingo-generator](https://www.npmjs.com/package/oot-bingo-generator) might not
+match with the generator that was used for a specific bingo version.
+Get a version specific generator with `getGenerator()`:
+
+```ts
+import { getGenerator } from "oot-bingo-lists";
+
+const generator = getGenerator("v10.2");
+```
+
+#### Latest version
 
 Get the bingo list of the latest version:
 
@@ -59,25 +75,3 @@ import { generateBingoBoardFromVersion } from "oot-bingo-lists";
 
 const board = generateBingoBoardFromVersion("v9.3", "blackout", 654321);
 ```
-
-### Changelog
-
-Print the changes between an old and new version. The provided goal lists should be of a single mode (like normal or
-short), not combined:
-
-```ts
-import { printChangeLog, getBingoList } from "oot-bingo-lists";
-
-printChangeLog(getBingoList("v10.1").normal, getBingoList("v10.2").normal);
-```
-
-## Sandbox
-
-If you're running this project directly instead of importing it in another project, you can run `npm start` to
-execute `src/sandbox/main.ts`. This file:
-
-* Contains an example of how to generate a changelog between two versions. Put
-  your own proposed bingo list in `exampleBingoList.ts` to see which changes it has compared to an existing version.
-* Demonstrates how to generate a board of a specific version and print the goal names.
-
-Add your own code to this file to access bingo lists, and generate boards and changelogs.
