@@ -75,3 +75,30 @@ import { generateBingoBoardFromVersion } from "oot-bingo-lists";
 
 const board = generateBingoBoardFromVersion("v9.3", "blackout", 654321);
 ```
+
+## Run source code directly
+
+If you would like to work with the source code directly rather than installing this as a package, you can clone the repo
+and
+install the dependencies:
+
+```sh
+npm run install
+```
+
+### Build
+
+Create a build of the package outputted in the folder `build`:
+
+```sh
+npm run build
+```
+
+### Publish
+
+Publish the package to NPM:
+
+```
+npm run prepare
+npm publish
+```
