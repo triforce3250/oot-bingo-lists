@@ -9270,4 +9270,4 @@ export const bingoList_v10_5: BingoList = {
       "endon": "max -1"
     }
   }
-}
+};
